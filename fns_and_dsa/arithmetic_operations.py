@@ -1,17 +1,17 @@
 def perform_operation(num1, num2, operation):
-#  num1 = int(input ("Enter the first number:"))
-#  num2 = int(input("Enter the second number:"))
-# operation = input("Choose the operation ('add', 'subtract', 'multiply', 'divide'):")  
-   match operation:
-      case "divide":
-         result= num1/num2
-         print(f"The result is {result}")
-      case "multiply":
-         result= num1*num2
-         print(f"The result is {result}")
-      case "subtract":
-         result= num2 - num1
-         print(f"The result is {result}")
-      case "add":
-         result= num1/num2
-         print(f"The result is {result}")
+
+
+   if operation == "divide":
+      result= num1/num2
+      return result
+
+   elif operation == "multiply":
+      result = num1*num2
+      return result
+   elif operation == "subtract":
+      result = num2- num1
+      return result
+   elif operation == "add":
+      result = num1 + num2
+      return result
+
