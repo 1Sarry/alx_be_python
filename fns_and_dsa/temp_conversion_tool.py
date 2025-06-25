@@ -9,7 +9,7 @@ def convert_to_celsius(f_temp):
      temp_in_celsius = (temp_input - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
      print(f"{f_temp}°F is {temp_in_celsius}°C")
      
-
+# (CELSIUS_TO_FAHRENHEIT_FACTOR + 32) 
 def convert_to_fahrenheit(c_temp):
      temp_in_fahrenheit = CELSIUS_TO_FAHRENHEIT_FACTOR * temp_input + 32
      print(f"{c_temp}°C is: {temp_in_fahrenheit}°F")
