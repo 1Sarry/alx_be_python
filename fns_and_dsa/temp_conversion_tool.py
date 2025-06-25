@@ -1,7 +1,11 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9 
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
-temp_input =   float(input("Enter the temperature to convert: "))
+try:
+    temp_input =   float(input("Enter the temperature to convert: "))
+except ValueError:
+    print("Invalid temperature. Please enter a numeric value.")
+    exit()
 select_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
 
@@ -20,5 +24,5 @@ if select_unit == "C":
 elif select_unit == "F":
   temp_in_fahrenheit = convert_to_fahrenheit(temp_input)
 else:
-   print("Invalid temperature. Please enter a numeric value!")
+    print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
 
